@@ -1,12 +1,15 @@
 <template>
-    <div>
-        <p> Archive </p>       
-    </div>
-
+    <h1>To do List:</h1>
+    <TodoList location="archive" />
 </template>
 
 <script>
+import TodoList from '../components/TodoList.vue'
+
 export default {
-    name: 'ourArchive',
+    name: 'HomePage',
+    components: {
+        TodoList,
+    },
 }
 </script>
